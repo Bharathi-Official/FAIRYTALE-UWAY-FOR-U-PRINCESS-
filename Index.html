@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#120b29">
+
+    <title>For My Princess ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<audio id="bgMusic" loop>
+    <source src="romantic-bgm.mp3" type="audio/mpeg">
+</audio>
+    <!-- BACKGROUND -->
+    <div class="sky">
+        <div class="moon"></div>
+        <div class="stars"></div>
+        <div class="stars stars-2"></div>
+        <div class="mist"></div>
+    </div>
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <!-- MUSIC -->
+    <button id="musicButton" class="music-button" aria-label="Toggle music">
+        ♫
+    </button>
+
+    <!-- MAIN APP -->
+    <main id="app">
+
+        <!-- OPENING -->
+        <section id="opening" class="scene active">
+
+            <div class="opening-content">
+
+                <div class="tiny-crown">♕</div>
+
+                <p class="eyebrow">A LITTLE SOMETHING FOR MY</p>
+
+                <h1>
+                    My Princess
+                    <span>♡</span>
+                </h1>
+
+                <div class="divider">
+                    <span>✦</span>
+                    <i></i>
+                    <span>✦</span>
+                    <i></i>
+                    <span>✦</span>
+                </div>
+
+                <p class="opening-text">
+                    This isn't just a thank-you letter...
+                    <br>
+                    It's a little collection of all the reasons
+                    <br>
+                    my heart is grateful for you.
+                </p>
+
+                <button id="startButton" class="magic-button">
+                    <span>✦</span>
+                    Collect Your Fairytale Credits
+                    <span>✦</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CREDIT SCENE -->
+        <section id="creditScene" class="scene hidden">
+
+            <div class="credit-wrapper">
+
+                <div class="progress-area">
+
+                    <span class="credit-label">
+                        ✦ FAIRYTALE CREDIT ✦
+                    </span>
+
+                    <span id="creditNumber">
+                        01 / 40
+                    </span>
+
+                </div>
+
+
+                <div class="credit-card">
+
+                    <div class="card-glow"></div>
+
+                    <div class="credit-content">
+
+                        <div class="mini-crown">♕</div>
+
+                        <p id="creditTitle" class="credit-title">
+                            Thank you...
+                        </p>
+
+                        <p id="creditMessage" class="credit-message">
+                        </p>
+
+                    </div>
+
+
+                    <!-- VECTOR ANIMATION AREA -->
+                    <div id="vectorScene" class="vector-scene">
+
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+
+                        <div class="vector-heart">♡</div>
+
+                        <div class="floating-star star-a">✦</div>
+                        <div class="floating-star star-b">✧</div>
+                        <div class="floating-star star-c">✦</div>
+
+                    </div>
+
+
+                    <button id="collectButton" class="collect-button">
+
+                        <span class="button-sparkle">✦</span>
+
+                        <span>
+                            Collect This Love
+                        </span>
+
+                        <span class="button-heart">♡</span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="credit-counter">
+
+                    <span class="heart-icon">♡</span>
+
+                    <span id="counter">
+                        0 Love Credits Collected
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL SCENE -->
+        <section id="finalScene" class="scene hidden">
+
+            <div class="final-content">
+
+                <div class="final-stars">
+                    ✦　✧　✦
+                </div>
+
+                <p class="final-small">
+                    YOU COLLECTED EVERY FAIRYTALE CREDIT
+                </p>
+
+                <div class="infinity">
+                    ∞
+                </div>
+
+                <h2>
+                    Infinite Love
+                </h2>
+
+                <p class="final-message">
+                    No matter how many thank-yous I write,
+                    <br>
+                    I'll always find one more reason to love you.
+                </p>
+
+                <button id="revealButton" class="magic-button">
+                    Reveal Your Final Surprise
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGE REVEAL -->
+        <section id="revealScene" class="scene hidden">
+
+            <div class="reveal-content">
+
+                <div class="image-frame">
+
+                    <!-- Replace with your Prince + Princess image -->
+                    <img
+                        id="princessImage"
+                        src="prince-princess.jpg"
+                        alt="My Princess and her Prince"
+                    >
+
+                    <div class="frame-glow"></div>
+
+                </div>
+
+                <p class="reveal-title">
+                    Smile Always,
+                    <span>My Princess.</span>
+                </p>
+
+                <p class="reveal-text">
+                    Because your smile will always be
+                    <br>
+                    one of my favorite things
+                    <br>
+                    in this entire fairytale.
+                </p>
+
+                <div class="final-signature">
+                    With all my love,
+                    <br>
+                    <strong>Your Prince ♡</strong>
+                </div>
+
+                <button id="loveButton" class="final-love-button">
+                    I Love You ∞
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- LOVE BURST -->
+    <div id="loveBurst"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
